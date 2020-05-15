@@ -50,6 +50,12 @@
     font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    .hero-content .entry-header h2 {
+        font-size: 80px;
+    }
+
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
         font-size: 172px;
