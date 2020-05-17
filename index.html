@@ -44,7 +44,7 @@
     }
     </style>
 
-    <body class="home blog" style="background-color: #2f2f2b;">
+    <body class="home blog" style="background-color: #2f2f2b;" onload="done()">
         <div class="doc-loader"></div>
 
         <div class="hero-content">
@@ -331,13 +331,8 @@
             if(h==0){
                 if(m==0){
                     if(s==0){
-                        hide.style.display = "none";
-                        z.style.display = "block";
-                        y.innerHTML = "Today is your day<br>scroll down";
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
+
                                 log('done');
-                         }
                     }
                 }
             }
@@ -351,6 +346,18 @@
 
     function log(msg) {
         console.log(msg);
+    }
+
+    function done(){
+                var hide = document.getElementById('toHide');
+
+                var x = document.getElementById('main1');
+        var y = document.getElementById('changeTo');
+        var z = document.getElementById('confetti');
+                            hide.style.display = "none";
+                        z.style.display = "block";
+                        y.innerHTML = "Today is your day<br>scroll down";
+                                x.style.display = "block";
     }
     </script>
 </html>
