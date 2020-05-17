@@ -10,10 +10,10 @@
     var countdown_date = $('.countdown').data("date");
 
     $('.countdown').countdown(countdown_date, function(event) {
-        $('.dday').html(event.strftime('0'));
-        $('.dhour').html(event.strftime('0'));
-        $('.dmin').html(event.strftime('0'));
-        $('.dsec').html(event.strftime('0'));
+        $('.dday').html(event.strftime('%-D'));
+        $('.dhour').html(event.strftime('%-H'));
+        $('.dmin').html(event.strftime('%-M'));
+        $('.dsec').html(event.strftime('%-S'));
     });
 
     // Events Slider
