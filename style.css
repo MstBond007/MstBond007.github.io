@@ -22,6 +22,16 @@
     -webkit-text-fill-color: transparent;
 }
 
+.hero-content .entry-header h6 {
+    padding: 50px;
+    margin: 0;
+    font-family: mountains;
+    font-size:40px;
+    background: -webkit-linear-gradient(#7f7fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .hero-content .entry-header h5 {
     padding: 50px;
     margin: 0;
@@ -56,10 +66,6 @@
         font-size: 80px;
     }
 
-@media screen and (min-width: 992px) {
-    .hero-content .entry-header h2 {
-        font-size: 172px;
-    }
 
     .hero-content .entry-header .entry-meta-date {
         top: 60px;
